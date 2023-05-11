@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<body>
+    
+
+    <button onclick="increment()" id="incBtn">Increment By 1</button>
+    <label for="" id="lable">0</label>
+
+    <button onclick="decrement()">Decrement By 1</button>
+    <br>
+    <button onclick="reset()">Reset</button>
+
+    <Script>
+        function increment(){
+            let value = Number(document.getElementById("lable").innerText);
+            document.getElementById("lable").innerText = value + 1
+        }
+        function decrement(){
+            let value = Number(document.getElementById("lable").innerText);
+            document.getElementById("lable").innerText = value - 1
+        }
+        function reset(){
+            document.getElementById("lable").innerText = 0
+        }
+    </Script>
+</body>
+</html>
